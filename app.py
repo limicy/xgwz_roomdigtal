@@ -197,5 +197,11 @@ else:
     st.warning("请上传日志文件以开始分析。")
 
 # 页脚
-st.markdown("---")
-st.caption("© 2026 卡五星游戏数据分析工具 - 由 Trae 助手生成")
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
